@@ -19,7 +19,7 @@ fun BeerEntity.toBeer(): Beer {
     return Beer(
         id = id,
         name = name,
-        tagLine = tagLine,
+        tagLine = tagLine?:"",
         description = description,
         first_brewed = first_brewed,
         image_url = image_url
